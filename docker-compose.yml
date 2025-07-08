@@ -1,0 +1,8 @@
+
+services:
+  fastqc-app:
+    build: .
+    env_file: dev.env
+    volumes:
+      - ./data/input:/service/data/input
+      - ./data/output:/service/data/output

@@ -1,0 +1,22 @@
+{
+  "name": "fastqc-bulkrna",
+  "description": "FastQC quality control for bulk RNA-seq FASTQ files",
+  "version": "1.0.0",
+  "authors": ["Your Name <your.email@example.com>"],
+  "command": "python main.py",
+  "inputs": [
+    {
+      "name": "fastq_files",
+      "description": "FASTQ or FASTQ.GZ input files",
+      "path": "/inputs",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "fastqc_reports",
+      "description": "FastQC HTML and ZIP files",
+      "path": "/outputs"
+    }
+  ]
+}
